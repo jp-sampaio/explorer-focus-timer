@@ -11,4 +11,4 @@ buttonToggle.addEventListener("click", event => {
 
   // negando o valor atual
   darkMode = !darkMode;
-}) 
+})

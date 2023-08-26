@@ -83,11 +83,11 @@ button {
 /* Quando tiver com a class running vai pegar a outra class */
 .running .ph-play-circle,
 .running .ph-timer,
-.running .ph-speaker-high,
+.music-on .ph-speaker-none,
 /* Quando não tiver a class stop vai executar a regra*/
 html:not(.running) .ph-pause-circle,
 html:not(.running) .ph-stop-circle,
-html:not(.running) .ph-speaker-none {
+html:not(.music-on) .ph-speaker-high {
   display: none;
 }
 
