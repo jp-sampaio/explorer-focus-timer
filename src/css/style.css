@@ -80,18 +80,18 @@ button {
   color: var(--text-color);
 }
 
-/* Quando tiver com a class running vai pegar a outra class */
+/* Quando tiver com a class running ou music-on vai pegar a outra class e executar a regra */
 .running .ph-play-circle,
 .running .ph-timer,
 .music-on .ph-speaker-none,
-/* Quando não tiver a class stop vai executar a regra*/
+/* Quando não tiver a class running ou music-on vai executar a regra */
 html:not(.running) .ph-pause-circle,
 html:not(.running) .ph-stop-circle,
 html:not(.music-on) .ph-speaker-high {
   display: none;
 }
 
-/* Utilitários são configurações que podemos reutilizar outras vezes no meu código, esse sr-only vai ser utilizados para acessibilidade, onde vai esconder a descrição, mais vai aparecer no leitor de tela*/
+/* Utilitários são configurações que podemos reutilizar outras vezes no meu código, esse sr-only vai ser utilizados para acessibilidade, onde vai esconder a descrição, mais vai aparecer no leitor de tela */
 .sr-only {
   width: 1px;
   height: 1px;
