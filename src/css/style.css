@@ -8,6 +8,7 @@
   /* clamp(menor valor, valor ideal, maior valor) */
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 
+  /* criar um button que modifique as cores intuitivamente */
   --hue: 194;
   --bg-color: hsl(var(--hue), 5%, 7%);
   --text-color: hsl(var(--hue), 40%, 98%);
