@@ -4,6 +4,8 @@ import { reset } from "./actions.js";
 import { kitchenTimer } from "./sounds.js";
 
 export function countDown() {
+  clearTimeout(state.countDownId)
+
   if(!state.isRunning) {
     return
   }
@@ -26,8 +28,8 @@ export function countDown() {
 
   updateDisplay(minutes, seconds)
 
-  // SetTimeout faz com que execute depois de 1000 milissegundos, uma função que que chama outra função é chamado de callBack e quando a mesma função se chama é a recurção.
-  setTimeout(() => countDown(), 1000);
+  // SetTimeout faz com que execute depois de 1000 milissegundos, uma função que chama outra função é chamado de callBack e quando a mesma função se chama é a recurção.
+  state.countDownId = setTimeout(() => countDown(), 1000);
 }
 
 export function updateDisplay(minutes, seconds) {
