@@ -70,7 +70,7 @@ body {
 }
 
 button {
-  background: none;
+  background-color: transparent;
   border: none;
   color: var(--primary-color);
   font-size: 6.4rem;
@@ -78,7 +78,7 @@ button {
 }
 
 .secundary {
-  color: var(--text-color);
+  color: var(--button-secondary);
 }
 
 /* Quando tiver com a class running ou music-on vai pegar a outra class e executar a regra */
